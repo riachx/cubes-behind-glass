@@ -3,3 +3,80 @@ body {
   overflow:hidden;
   
 }
+
+/* CSS to style the title overlay */
+#overlay-title {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  font-size: 15em; /* Make the title big */
+  font-family: 'Inter';
+  color: white; /* Set the text color */
+  font-weight: 900;
+  text-align: center;
+  pointer-events:none;
+  /* Optional shadow for better visibility */
+  z-index: 1000; /* Ensure the title stays above everything */
+}
+
+/* Ensure the canvas fills the screen */
+canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+.box{
+  position: absolute;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  
+}
+.box span{
+  position: relative;
+  top: 20px;
+  display: inline-block;
+  animation: bounce 0.4s ease infinite alternate;
+}
+
+@keyframes bounce{
+  100%{
+    top: -3px;
+  }
+}
+.box span:nth-child(2){
+  animation-delay:0.1s;
+}
+.box span:nth-child(3){
+  animation-delay:0.2s;
+}
+.box span:nth-child(4){
+  animation-delay:0.3s;
+}
+.box span:nth-child(5){
+  animation-delay:0.4s;
+}
+
+.box span:nth-child(6){
+  animation-delay:0.5s;
+}
+
+.box span:nth-child(7){
+  animation-delay:0.6s;
+}
+
+.box span:nth-child(8){
+  animation-delay:0.7s;
+}
+
+.box span:nth-child(9){
+  animation-delay:0.8s;
+}
+.box span:nth-child(10){
+  animation-delay:0.9s;
+}
